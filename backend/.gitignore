@@ -1,0 +1,13 @@
+# Environment variables
+.env
+.env.local
+
+# Build output
+/bin
+
+# Go workspace
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
