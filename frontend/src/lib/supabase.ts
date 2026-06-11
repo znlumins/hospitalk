@@ -1,12 +1,15 @@
-import { createClient } from '@supabase/supabase-js';
+import { createBrowserClient } from '@supabase/ssr'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export function createClient() {
+  return createBrowserClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
+}
 
 // Helper: get current user session
 export async function getCurrentUser() {
+  const supabase = createClient();
   const { data: { user }, error } = await supabase.auth.getUser();
   if (error) return null;
   return user;
@@ -14,6 +17,7 @@ export async function getCurrentUser() {
 
 // Helper: sign in with email and password
 export async function signIn(email: string, password: string) {
+  const supabase = createClient();
   const { data, error } = await supabase.auth.signInWithPassword({
     email,
     password,
@@ -23,6 +27,7 @@ export async function signIn(email: string, password: string) {
 
 // Helper: sign out
 export async function signOut() {
+  const supabase = createClient();
   const { error } = await supabase.auth.signOut();
   return { error };
 }
