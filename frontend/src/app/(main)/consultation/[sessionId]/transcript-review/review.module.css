@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  color: var(--primary-dark);
+  margin-bottom: var(--space-1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  min-height: 500px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--surface-border);
+  background: var(--surface);
+}
+
+.cardHeader h3 {
+  flex: 1;
+  font-size: var(--font-size-lg);
+}
+
+.logCard, .summaryCard {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.logContent {
+  flex: 1;
+  padding: var(--space-4);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background: var(--background);
+}
+
+.logItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.logMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-xs);
+}
+
+.logSender {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.logTime {
+  color: var(--text-muted);
+}
+
+.logInput {
+  width: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  resize: vertical;
+  min-height: 60px;
+  background: var(--surface);
+  transition: all var(--transition-fast);
+}
+
+.logInput:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  background: var(--background);
+  box-shadow: 0 0 0 2px var(--primary-50);
+}
+
+.summaryContent {
+  flex: 1;
+  padding: var(--space-4);
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+.summaryInput {
+  flex: 1;
+  width: 100%;
+  padding: var(--space-4);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  resize: none;
+  background: var(--surface);
+}
+
+.summaryInput:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  background: var(--background);
+}
