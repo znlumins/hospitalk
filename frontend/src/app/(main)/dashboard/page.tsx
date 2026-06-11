@@ -28,7 +28,7 @@ export default function DashboardPage() {
       <div className={styles.header}>
         <div>
           <h1 className={styles.title}>Dashboard Overview</h1>
-          <p className="text-muted">Selamat datang, Dr. Demo! Berikut adalah ringkasan hari ini.</p>
+          <p className="text-muted">Selamat datang, Dr. Daffa Ahmad Al Attas! Berikut adalah ringkasan hari ini.</p>
         </div>
         <Link href="/sessions">
           <Button icon={<CalendarClock size={18} />}>Mulai Sesi Baru</Button>
