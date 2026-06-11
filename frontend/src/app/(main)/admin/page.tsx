@@ -8,10 +8,10 @@ import styles from './admin.module.css';
 
 export default function AdminPage() {
   const auditLogs = [
-    { id: '1', user: 'Dr. Daffa Ahmad Al Attas', action: 'UPDATE_TRANSCRIPT', resource: 'Session #1234', time: '2026-06-10 10:15:22', ip: '192.168.1.5' },
+    { id: '1', user: 'Daffa Ahmad Al Attas', action: 'UPDATE_TRANSCRIPT', resource: 'Session #1234', time: '2026-06-10 10:15:22', ip: '192.168.1.5' },
     { id: '2', user: 'Admin System', action: 'CREATE_USER', resource: 'User #992', time: '2026-06-10 09:00:00', ip: '10.0.0.1' },
     { id: '3', user: 'Nurse Ratna', action: 'VIEW_PATIENT', resource: 'Patient RM-001', time: '2026-06-09 16:45:10', ip: '192.168.1.12' },
-    { id: '4', user: 'Dr. Daffa Ahmad Al Attas', action: 'VIEW_PATIENT', resource: 'Patient RM-002', time: '2026-06-09 14:20:00', ip: '192.168.1.5' },
+    { id: '4', user: 'Daffa Ahmad Al Attas', action: 'VIEW_PATIENT', resource: 'Patient RM-002', time: '2026-06-09 14:20:00', ip: '192.168.1.5' },
   ];
 
   const devices = [

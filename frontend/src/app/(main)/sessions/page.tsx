@@ -10,10 +10,10 @@ import styles from './sessions.module.css';
 
 export default function SessionsPage() {
   const sessions = [
-    { id: '1', patient: 'Budi Santoso', doctor: 'Dr. Daffa Ahmad Al Attas', status: 'active', date: '2026-06-10', time: '10:00 AM' },
-    { id: '2', patient: 'Siti Aminah', doctor: 'Dr. Daffa Ahmad Al Attas', status: 'completed', date: '2026-06-10', time: '09:30 AM' },
-    { id: '3', patient: 'Ahmad Dahlan', doctor: 'Dr. Daffa Ahmad Al Attas', status: 'completed', date: '2026-06-09', time: '14:15 PM' },
-    { id: '4', patient: 'Rina Melati', doctor: 'Dr. Daffa Ahmad Al Attas', status: 'cancelled', date: '2026-06-08', time: '11:00 AM' },
+    { id: '1', patient: 'Budi Santoso', doctor: 'Daffa Ahmad Al Attas', status: 'active', date: '2026-06-10', time: '10:00 AM' },
+    { id: '2', patient: 'Siti Aminah', doctor: 'Daffa Ahmad Al Attas', status: 'completed', date: '2026-06-10', time: '09:30 AM' },
+    { id: '3', patient: 'Ahmad Dahlan', doctor: 'Daffa Ahmad Al Attas', status: 'completed', date: '2026-06-09', time: '14:15 PM' },
+    { id: '4', patient: 'Rina Melati', doctor: 'Daffa Ahmad Al Attas', status: 'cancelled', date: '2026-06-08', time: '11:00 AM' },
   ];
 
   return (

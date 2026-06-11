@@ -63,7 +63,7 @@ export default function Sidebar() {
         <div className={styles.userInfo}>
           <div className={styles.avatar}>D</div>
           <div>
-            <p className={styles.userName}>Dr. Daffa Ahmad Al Attas</p>
+            <p className={styles.userName}>Daffa Ahmad Al Attas</p>
             <p className={styles.userRole}>Dokter</p>
           </div>
         </div>
