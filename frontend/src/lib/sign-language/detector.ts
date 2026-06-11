@@ -114,9 +114,7 @@ export class SignLanguageDetector {
   private async initModel() {
     if (typeof window === 'undefined') return;
     try {
-      console.log('Loading MediaPipe Hands CDN scripts...');
-      await this.loadScript('https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js');
-      await this.loadScript('https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js');
+      console.log('Waiting for MediaPipe Hands to be available...');
 
       // Poll to wait for window.Hands to be fully evaluated/loaded
       let retries = 50;

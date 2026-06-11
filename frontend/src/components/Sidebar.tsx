@@ -10,8 +10,8 @@ import {
   MessageSquareText,
   ShieldCheck,
   LogOut,
-  Activity,
 } from 'lucide-react';
+import Image from 'next/image';
 import styles from './Sidebar.module.css';
 
 const navItems = [
@@ -30,7 +30,7 @@ export default function Sidebar() {
       {/* Logo */}
       <div className={styles.logo}>
         <div className={styles.logoIcon}>
-          <Activity size={24} strokeWidth={2.5} />
+          <Image src="/logo.png" alt="Logo" width={28} height={28} style={{ objectFit: 'contain' }} />
         </div>
         <div>
           <h1 className={styles.logoTitle}>HOSPITALK</h1>

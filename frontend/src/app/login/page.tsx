@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Activity, Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import { signIn } from '@/lib/supabase';
 import styles from './login.module.css';
@@ -47,7 +48,7 @@ export default function LoginPage() {
       <div className={styles.branding}>
         <div className={styles.brandContent}>
           <div className={styles.brandLogo}>
-            <Activity size={40} strokeWidth={2.5} />
+            <Image src="/logo.png" alt="HOSPITALK Logo" width={60} height={60} style={{ objectFit: 'contain' }} />
           </div>
           <h1 className={styles.brandTitle}>HOSPITALK</h1>
           <p className={styles.brandSubtitle}>Medical Communication Platform</p>
